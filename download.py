@@ -1,9 +1,9 @@
 import requests
 import shutil
 # Nome del cimitero
-nomecimitero = "cimitero2.zip"
+nomecimitero = "cimitero1.zip"
 # Download file from url
-url = 'http://url.org:3001/cimitero/get/'+nomecimitero
+url = 'http://backend.memoryp.org:3001/cimitero/get/'+nomecimitero
 r = requests.get(url, allow_redirects=True)
 open(nomecimitero, 'wb').write(r.content)
 # Unzipping file
